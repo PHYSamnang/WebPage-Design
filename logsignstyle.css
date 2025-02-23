@@ -1,5 +1,4 @@
 body {
-    min-height: 50vh;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,13 +17,13 @@ body {
   }
 
 h2 {
-    margin: 15px 0 20px 0;
+    margin-bottom: 30px;
     font-size: 28px;
 }
 
 .tabs {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .tab {
@@ -46,6 +45,11 @@ input[type="text"], input[type="password"] {
     border-radius: 5px;
     font-size: 15px;
 }
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #e6399b;
+    color: #e6399b;
+}
 
 .forgot-password {
     color: #e6399b;
@@ -53,7 +57,7 @@ input[type="text"], input[type="password"] {
     text-align: left;
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -70,7 +74,6 @@ input[type="text"], input[type="password"] {
 }
 
 .signup-text {
-    margin-top: 20px;
     font-size: 15px;
     margin-bottom: 15px;
 }
@@ -82,7 +85,16 @@ input[type="text"], input[type="password"] {
 
 .backhome {
     font-size: 12px;
+    margin-top: 15px;
     text-align: left;
+}
+
+.backhome a {
+    text-decoration: none;
+}
+
+.backhome a:hover {
+    color: #e6399b;
 }
 
 /* .signup-text {
