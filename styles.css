@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: #fcd536;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    width: 450px;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fbcb04;
+    border: 1px solid #c2fcf3;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.info {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    background-color: #fbcb04;
+}
+
+.profile-img {
+    background-image: url(icon/PF.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2sease-in-out;
+}
+
+.acc-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fbcb04;
+    border: 1px solid #c2fcf3;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.acc {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.progress-ring-bg {
+    fill: none;
+    stroke-width: 10;
+}
+
+.progress-ring-progress {
+    fill: none;
+    stroke: #009e7a;
+    stroke-width: 10;
+    stroke-dasharray: 326 57;
+    stroke-dashoffset: 1480;
+    stroke-linecap: round;
+}
+
+.progress-ring-accent {
+    fill: none;
+    stroke: #fd8b7b;
+    stroke-width: 10;
+    stroke-dasharray: 15 376.99;
+    stroke-dashoffset: -18;
+    stroke-linecap: round;
+}
+
+.progress-content {
+    position: absolute;
+    text-align: center;
+    right: 45px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.khr {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.usd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.riels {
+    font-size: 30px;
+    color: #fd8b7b;
+    font-family: "Koh Santepheap", sans-serif;
+    margin: 0;
+}
+
+.fa-dollar-sign {
+    font-size: 20px;
+    color: #009e7a;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.fa-solid {
+    font-size: 24px;
+}
+
+.balance-text {
+    font-size: 20px;
+    font-style: bold;
+}
+
+.balance-blur {
+    color: #4d4637;
+    font-family: "Nunito", sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    filter: blur(10px);
+    margin: 0;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fbcb04;
+    border: 1px solid #c2fcf3;
+    border-radius: 10px;
+    width: 195px;
+    padding: 10px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbcb04;
+    border: 1px solid #c2fcf3;
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px;
+}
+
+.icon {
+    font-size: 35px;
+    color: #4d4637;
+}
+
+.element {
+    color: #4d4637;
+    font-size: 18px;
+    font-weight: bold;
+}

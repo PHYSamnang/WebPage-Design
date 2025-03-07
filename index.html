@@ -3,40 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Arch's Webpage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Maybank App UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1 class="header">Welcome to my Web Page</h1>
-        <nav class="nav-link">
-            <a href="index.html" target="_blank"><img width="50" height="50" src="img/nexus-logo.jpg" alt="Nexus's logo"></a>
-            <a id="login-button" class="link-page" href="login.html">Login</a>
-            <a class="link-page" href="home.html">Home</a>
-            <a class="link-page" href="about.html">About</a>
-            <a class="link-page" href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section class="section">
-            <h3>Nexus Arch</h3>
-            <p>This is a Web Page for Architecture Education</p>
-            <a class="link" href="https://www.facebook.com/nexusarchrm" target="_blank" rel="noopener noreferrer">Visit Nexus Arch's Facebook Page</a>
-            <a class="link" href="tel:012345678">Call Nexus</a>
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnexusarchrm&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </section>
-        <section class="section">
-            <h3>Our Services</h3>
-            <ul>
-                <li>Architecture Design</li>
-                <li>Interior Design</li>
-                <li>Urban Planning</li>
-                <li>Project Management</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p class="footer">Copyright @Nexus Arch 2025</p>
-    </footer>
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img class="logo" src="icon/maybank-logo-png-transparent.png" alt="Maybank Logo"></div>
+            <div class="info">
+                <i class="fa-solid fa-circle-info" style="color: #4d4637"></i>
+                <i class="fa-solid fa-qrcode" style="color: red;"></i>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile-img"></div>
+            <div class="profile-info">
+                <h3>Hello, PHY Samnang</h3>
+                <p>Profile <i class="fa-solid fa-angle-right"></i></p>
+            </div>"
+        </div>
+        <div class="acc-balance">
+            <div class="acc">
+                <svg class="progress-ring" width="150" height="150">
+                    <circle class="progress-ring-bg" cx="70" cy="70" r="60"></circle>
+                    <circle class="progress-ring-progress" cx="70" cy="70" r="60"></circle>
+                    <circle class="progress-ring-accent" cx="70" cy="70" r="60"></circle>
+                </svg>
+                <div class="progress-content">
+                    <i class="fa-solid fa-wallet"></i>
+                    <p class="acc-text">Accounts</p>
+                </div>
+            </div>
+            <div class="balance">
+                <div class="total">
+                    <p class="balance-text">Total Balances</p>
+                    <i class="fa-solid fa-eye-slash"></i>
+                </div>
+                <div class="khr">
+                    <p class="balance-blur">1,000,000</p>
+                    <p class="riels">រ</p>
+                </div>
+                <div class="usd">
+                    <p class="balance-blur">1,000,000</p>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="item">
+                <i class="icon fa-solid fa-scroll"></i>
+                <p class="element">Payments</p>
+            </div>
+            <div class="item">
+                <i class="icon fa-solid fa-mobile-screen-button"></i>
+                <p class="element">Mobile Top Up</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="items">
+                <i class="icon fa-solid fa-receipt"></i>
+                <p class="element">Pay-Me</p>
+            </div>
+            <div class="items">
+                <i class="icon fa-solid fa-expand"></i>
+                <p class="element">Scan QR</p>
+            </div>
+            <div class="items">
+                <i class="icon fa-solid fa-right-left"></i>
+                <p class="element">Transfer</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="items">
+                <i class="icon fa-solid fa-chart-line"></i>
+                <p class="element">Deposits</p>
+            </div>
+            <div class="items">
+                <i class="icon fa-solid fa-hand-holding-dollar"></i>
+                <p class="element">Loans</p>
+            </div>
+            <div class="items">
+                <i class="icon fa-solid fa-money-check-dollar"></i>
+                <p class="element">Quick Cash</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
