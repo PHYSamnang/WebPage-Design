@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     background: #fcd536;
+    background: linear-gradient(180deg, #fbd01d, #e2b704);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
