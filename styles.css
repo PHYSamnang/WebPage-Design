@@ -18,11 +18,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fbcb04;
+    padding: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
     background-color: #fbcb04;
-    border: 1px solid #c2fcf3;
-    padding: 10px;
-    margin-bottom: 30px;
+    border: 1px solid #c9a203;
+    box-shadow: 0 3px 5px rgba(252, 219, 79, .6);
 }
 
 .logo {
@@ -40,8 +42,12 @@ body {
     flex-direction: flex-start;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: #fbcb04;
+    background-color: #fbcb04;
+    border: 1px solid #c9a203;
+    box-shadow: 0 3px 5px rgba(252, 219, 79, .6);
+    padding: 10px;
 }
 
 .profile-img {
@@ -64,9 +70,11 @@ body {
     align-items: center;
     border-radius: 10px;
     background-color: #fbcb04;
-    border: 1px solid #c2fcf3;
     padding: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    background-color: #fbcb04;
+    border: 1px solid #c9a203;
+    box-shadow: 0 3px 5px rgba(252, 219, 79, .6);
 }
 
 .acc {
@@ -165,11 +173,6 @@ p {
     font-size: 24px;
 }
 
-.balance-text {
-    font-size: 20px;
-    font-style: bold;
-}
-
 .balance-blur {
     color: #4d4637;
     font-family: "Nunito", sans-serif;
@@ -177,37 +180,6 @@ p {
     font-weight: bold;
     filter: blur(10px);
     margin: 0;
-}
-
-.service {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.item {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    background-color: #fbcb04;
-    border: 1px solid #c2fcf3;
-    border-radius: 10px;
-    width: 195px;
-    padding: 10px;
-}
-
-.items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fbcb04;
-    border: 1px solid #c2fcf3;
-    border-radius: 10px;
-    width: 120px;
-    padding: 10px;
 }
 
 .icon {
@@ -219,4 +191,134 @@ p {
     color: #4d4637;
     font-size: 18px;
     font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.card {
+    padding: 10px;
+    background-color: #fbcb04;
+    border: 3px solid #c9a203;
+    box-shadow: 0 3px 5px rgba(252, 219, 79, .6);
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 60px;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.cards:hover>.card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+}
+
+/* Footer */
+
+.social {
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fbcb04;
+    border: 3px solid #c9a203;
+    box-shadow: 0 3px 5px rgba(252, 219, 79, .6);
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #4d4637;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+    border-radius: 15%;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+.socialSvg {
+    width: 24px;
+}
+
+.socialSvg path {
+    fill: #fbcb04;
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
